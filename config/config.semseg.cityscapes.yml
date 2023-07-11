@@ -37,7 +37,7 @@ optimizer: AdamW
 output_dir: output
 
 # model weights
-weights: output\2023-06-26-15-15-41\weights\weights1.hdf5
+weights: output/weights1.hdf5
 
 # for predict.py only
 input_testing: /kaggle/input/cityscapes-dataset/cityscapes_dataset/leftImg8bit/test
