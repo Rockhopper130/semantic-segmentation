@@ -6,7 +6,7 @@ max_samples_training: 10000
 input_validation: /kaggle/input/cityscapes-dataset/cityscapes_dataset/leftImg8bit/val
 label_validation: /kaggle/input/cityscapes-dataset/cityscapes_dataset/gtFine/val
 max_samples_validation: 2000
-label_file: config\labels.py
+label_file: config/labels.py
 num_classes: 20
 
 # loop training
