@@ -26,7 +26,8 @@ class DeepLabV3Plus(Network):
         :param kwargs: other parameters
         """
         dilation = [1, 2]
-        base_model = 'Xception-DeepLab' if base_model is None else base_model
+        # base_model = 'Xception-DeepLab' if base_model is None else base_model
+        base_model = 'Xception-DeepLab'
         
         assert version == 'DeepLabV3Plus'
         assert base_model in ['VGG16',
