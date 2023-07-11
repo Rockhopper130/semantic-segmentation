@@ -1,10 +1,10 @@
 # dataset
 dataset: cityscapes
-input_training: D:\Datasets\cityscapes\leftImg8bit_trainvaltest\leftImg8bit\train
-label_training: D:\Datasets\cityscapes\gtFine_trainvaltest\gtFine\train
+input_training: /kaggle/input/cityscapes-dataset/cityscapes_dataset/leftImg8bit/train
+label_training: /kaggle/input/cityscapes-dataset/cityscapes_dataset/gtFine/train
 max_samples_training: 10000
-input_validation: D:\Datasets\cityscapes\leftImg8bit_trainvaltest\leftImg8bit\val
-label_validation: D:\Datasets\cityscapes\gtFine_trainvaltest\gtFine\val
+input_validation: /kaggle/input/cityscapes-dataset/cityscapes_dataset/leftImg8bit/val
+label_validation: /kaggle/input/cityscapes-dataset/cityscapes_dataset/gtFine/val
 max_samples_validation: 2000
 label_file: config\labels.py
 num_classes: 20
@@ -40,6 +40,6 @@ output_dir: output
 weights: output\2023-06-26-15-15-41\weights\weights1.hdf5
 
 # for predict.py only
-input_testing: D:\Datasets\cityscapes\leftImg8bit_trainvaltest\leftImg8bit\test
-label_testing: D:\Datasets\cityscapes\gtFine_trainvaltest\gtFine\test
+input_testing: /kaggle/input/cityscapes-dataset/cityscapes_dataset/leftImg8bit/test
+label_testing: /kaggle/input/cityscapes-dataset/cityscapes_dataset/gtFine/test
 max_samples_testing: 5
