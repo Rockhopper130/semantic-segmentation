@@ -35,7 +35,8 @@ def model_builder(input_shape: tuple, num_classes: int, model='DeepLabV3', base_
 
     if model in models:
         # initialise __init__ of the selected model class
-        model = models[model](input_shape, num_classes, model, base_model)
+        # model = models[model](input_shape, num_classes, model, base_model)
+        model = models[model](input_shape, num_classes, model)
         
         # get the base_model name
         base_model = model.get_base_model()
