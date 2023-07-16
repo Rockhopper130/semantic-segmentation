@@ -48,7 +48,7 @@ class DeepLabV3Plus(Network):
         self.input_shape = input_shape
 
     def __call__(self, **kwargs):
-        inputs = layers.Input(shape = tuple(self.input_shape) + (3,))
+        inputs = layers.Input(shape = self.input_shape + [3,])
         return self._deeplab_v3_plus(inputs)
 
     def _conv_bn_relu(self, x, filters, kernel_size, strides=1):
