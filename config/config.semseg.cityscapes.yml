@@ -18,8 +18,8 @@ model: DeepLabV3Plus
 base_model: Xception-DeepLab
 
 # epochs
-epochs: 50
-final_epoch: 60
+epochs: 20
+final_epoch: 25
 batch_size: 4
 valid_batch_size: 8
 shuffle: true
@@ -27,11 +27,11 @@ augment: true
 
 # hyper parameters
 random_seed: 101
-learning_rate: 1e-4
+learning_rate: 1e-3
 lr_scheduler: polynomial_decay
 early_stopping_patience: 10
 loss: FocalHybridLoss
-optimizer: AdamW
+optimizer: Adam
 
 # output directory
 output_dir: output
