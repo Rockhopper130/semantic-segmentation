@@ -14,7 +14,7 @@ loop_training: False
 
 # model
 image_shape: [256, 256]
-model: DeepLabV3plus
+model: DeepLabV3Plus
 base_model: Xception-DeepLab
 
 # epochs
