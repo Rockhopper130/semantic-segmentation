@@ -18,10 +18,10 @@ model: DeepLabV3Plus
 base_model: Xception-DeepLab
 
 # epochs
-epochs: 20
-final_epoch: 25
-batch_size: 4
-valid_batch_size: 8
+epochs: 10
+final_epoch: 15
+batch_size: 2
+valid_batch_size: 4
 shuffle: true
 augment: true
 
