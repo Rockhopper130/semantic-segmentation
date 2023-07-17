@@ -72,7 +72,13 @@ class DeepLabV3Plus(Network):
 
         x = custom_layers.Concatenate(out_size=self.aspp_size)(xs)
         x = layers.Conv2D(out_filters, 1, strides=1, kernel_initializer='he_normal')(x)
+        #--------------------------------------------------------------------------------------------------------------------------------------------
+        x = layers.Flatten()(x)
         x = layers.BatchNormalization()(x)
+        x = layers.Reshape((1,1,-1))(x)
+        #--------------------------------------------------------------------------------------------------------------------------------------------
+        # x = layers.BatchNormalization()(x)
+        #--------------------------------------------------------------------------------------------------------------------------------------------
         return x
 
     def _deeplab_v3_plus(self, inputs):
